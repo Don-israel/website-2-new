@@ -3,6 +3,11 @@
 <head>
     <title>Website</title>
     <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <style>
     h2{
@@ -15,19 +20,25 @@
       }
       .topnav a{
         float: left;
-        color: deeppink;
+        color: magenta;
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
         font-size: 17px;
       }
       .topnav a:hover{
-        background-color: blueviolet;
-        color: deepskyblue;
+        background-color: red;
+        color: darkblue;
       }
       .topnav a.active{
-        background-color: yellowgreen;
-        color: darkcyan;
+        background-color: orangered;
+        color: orange;
+      }
+      p{
+        color:blue;
+      }
+      body{
+        background-color: #5d8aa8;
       }
 </style>
 <body>
@@ -37,15 +48,44 @@
         <a class="active" href="index.html">Home</a>
         <a href="contactus.html">Contact-Us</a>
         <a href="about.html">About-Me</a>
+        <a href="newchapter.html">newchapter</a>
     </div>
 
-    <!-----Slider------->
-    <section>
-        <img class="mySlides" src="istockphoto-496813583-612x612.jpg" style="height:500px; width:1340px;">
-        <img class="mySlides" src="router-isolated-transparent-background_191095-24268.avif" style="height:500px;  width:1340px;">
-        <img class="mySlides" src="360_F_258519703_3922elpnwnYxW4N3egJpTEbgJsLesi0m.jpg" style="height:500px;  width:1340px;">
-
-    </section>
+    <div class="container">
+        <h2>Carousel Example</h2>
+        <div id="mycarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel indicators">
+                <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#mycarousel" data-slide-to="1"></li>
+                <li data-target="#mycarousel" data-slide-to="2"></li>
+            </ol>
+            <!-- wrapper for slides-->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="router-with-wi-fi-removebg-preview.png"
+                        alt="https://cdn.pixabay.com/photo/2016/11/18/16/19/flowers-1835619_1280.jpg">
+                </div>
+                <div class="item">
+                    <img src="router-isolated-transparent-background_191095-24268.avif"
+                        alt="https://t4.ftcdn.net/jpg/07/08/47/75/360_F_708477508_DNkzRIsNFgibgCJ6KoTgJjjRZNJD4mb4.jpg">
+                </div>
+                <div class="item">
+                    <img src="pngtree-d-render-of-white-background-with-modern-wifi-router-featuring-glowing-image_3903394.jpg"
+                        alt="https://images.pexels.com/photos/531474/pexels-photo-531474.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                </div>
+            </div>
+        </div>
+        <!-- left and right controls -->
+        <a class="left carousel-control" href="#mycarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#mycarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">next</span>
+        </a>
+    </div>
     <br>
     <span class="border trans" style="font-size:40px;">
         <center>Welcome all to this website</center>
